@@ -1,3 +1,41 @@
- {
-    color: red;
+/*
+* jQuery Mobile Framework
+* Copyright (c) jQuery Project
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+
+/*
+* Ported to lesscss.org by Alexander Prinzhorn
+*/
+
+/*
+* Parametric Mixins
+*/
+.linear-gradient (@start, @end) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@end)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, @start, @end); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, @start, @end); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, @start, @end); /* IE10 */
+    background-image:      -o-linear-gradient(top, @start, @end); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, @start, @end);
+}
+
+
+/* Swatches */
+
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+
+@A-borderColor: #2A2A2A;
+@A-backgroundColor: #3c3c3c;
+@A-color: #fff;
+
+.ui-bar-a {
+    border: 1px solid         @A-borderColor;
+    background:             @A-backgroundColor;
+    color:                     @A-color;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px #000000;
+
+    .linear-gradient(@A-backgroundColor, darken(@A-backgroundColor, 50%));
 }
