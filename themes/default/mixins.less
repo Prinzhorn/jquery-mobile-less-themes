@@ -1,0 +1,8 @@
+.linear-gradient (@start, @end) {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@end)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, @start, @end); /* Chrome 10+, Saf5.1+ */
+	background-image:	-moz-linear-gradient(top, @start, @end); /* FF3.6 */
+	background-image:	 -ms-linear-gradient(top, @start, @end); /* IE10 */
+	background-image:	  -o-linear-gradient(top, @start, @end); /* Opera 11.10+ */
+	background-image:		 linear-gradient(top, @start, @end);
+}

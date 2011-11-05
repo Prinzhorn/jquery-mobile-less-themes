@@ -2,37 +2,68 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-    <title>Default theme</title>
+	<title>Default theme</title>
 
-    <link href="../jquery.mobile.structure.css" rel="stylesheet" type="text/css" />
+	<link href="../jquery.mobile.structure.css" rel="stylesheet" type="text/css" />
 
-    <link href="theme.less" rel="stylesheet/less" type="text/css">
+	<link href="theme.less" rel="stylesheet/less" type="text/css">
 
-    <script type="text/javascript" src="../jquery.js"></script>
-    <script type="text/javascript" src="../jquery.mobile.js"></script>
-    <script type="text/javascript" src="../less.js"></script>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('[data-role="page"]')
+			.clone().attr({'data-theme': 'b', 'id': 'b'}).appendTo('body')
+			.clone().attr({'data-theme': 'c', 'id': 'c'}).appendTo('body')
+			.clone().attr({'data-theme': 'd', 'id': 'd'}).appendTo('body')
+			.clone().attr({'data-theme': 'e', 'id': 'e'}).appendTo('body');
+
+		$('[data-role="page"]').each(function() {
+			$(this).find('*').attr('data-theme', $(this).attr('data-theme'));
+		});
+	});
+	</script>
+	<script type="text/javascript" src="../jquery.mobile.js"></script>
+	<script type="text/javascript" src="../less.js"></script>
 </head>
-    
+	
 <body>
-    <div data-role="page" data-theme="a">
-        <div data-role="header" data-theme="a"><h1>A</h1></div>
-        
-        <div data-role="content" data-theme="a">
-            <ul data-role="listview" data-inset="false">
-                <li>Foo</li>
-                <li>Bar</li>
-            </ul>
-            <ul data-role="listview" data-inset="true">
-                <li>Foo</li>
-                <li>Bar</li>
-            </ul>
-        </div>
-        
-        <div data-role="footer" data-theme="a"></div>
-    </div>
+	<div data-role="page" data-theme="a" id="a">
+		<div data-role="header"><h1>A begin</h1></div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-inset="false">
+				<li><a href="#a">A</a></li>
+				<li><a href="#b">B</a></li>
+				<li><a href="#c">C</a></li>
+				<li><a href="#d">D</a></li>
+				<li><a href="#e">E</a></li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#a">A</a></li>
+				<li><a href="#b">B</a></li>
+				<li><a href="#c">C</a></li>
+				<li><a href="#d">D</a></li>
+				<li><a href="#e">E</a></li>
+			</ul>
+			<ul data-role="listview" data-inset="false">
+				<li>Foo</li>
+				<li>Bar</li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li>Foo</li>
+				<li>Bar</li>
+			</ul>
+			<form action="" method="GET">
+				<input type="button" value="Foo" />
+				<input type="text" />
+			</form>
+		</div>
+		
+		<div data-role="footer"><h4>A end</h4></div>
+	</div>
 </body>
 
 </html>
