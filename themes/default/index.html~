@@ -9,7 +9,7 @@
 
     <link href="../jquery.mobile.structure.css" rel="stylesheet" type="text/css" />
 
-    <link href="theme.less" rel="stylesheet/less" type="text/css">
+    <link href="styles.less" rel="stylesheet/less" type="text/css">
 
     <script type="text/javascript" src="../jquery.js"></script>
     <script type="text/javascript" src="../jquery.mobile.js"></script>
