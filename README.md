@@ -14,7 +14,7 @@ Folder structure
 ==========
 
 * themes
-	* default
+	* default (One folder for each theme)
 		* images (Image files for the theme)
 		* index.html (Show cases all available jQuery Mobile elements with all swatches)
 		* mixins.less (Mixins for things like border-radius and box-shadow)
