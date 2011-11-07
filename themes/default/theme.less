@@ -17,43 +17,6 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 
-.ui-bar-a {
-	border: 1px solid @a-bar-border;
-	background: @a-bar-background-color;
-	color: @a-bar-color;
-	font-weight: bold;
-	text-shadow: @a-bar-shadow-x @a-bar-shadow-y @a-bar-shadow-radius @a-bar-shadow-color;
-	font-family: @global-font-family;
-
-	.linear-gradient(@a-bar-background-start, @a-bar-background-end);
-
-	input, select, textarea, button {
-		font-family: @global-font-family;
-	}
-
-	.ui-link-inherit {
-		color: @a-bar-color;
-	}
-
-	.ui-link {
-		color: @a-bar-link-color;
-		font-weight: bold;
-
-		&:hover {
-			color: @a-bar-link-hover;
-		}
-
-		&:active {
-			color: @a-bar-link-active;
-		}
-
-		&:visited {
-			color: @a-bar-link-visited;
-		}
-	}
-}
-
-
 .ui-body-a {
 	border: 1px solid @a-body-border;
 	background: @a-body-background-color;
@@ -86,6 +49,42 @@
 
 		&:visited {
 			color: @a-body-link-visited;
+		}
+	}
+}
+
+.ui-bar-a {
+	border: 1px solid @a-bar-border;
+	background: @a-bar-background-color;
+	color: @a-bar-color;
+	font-weight: bold;
+	text-shadow: @a-bar-shadow-x @a-bar-shadow-y @a-bar-shadow-radius @a-bar-shadow-color;
+	font-family: @global-font-family;
+
+	.linear-gradient(@a-bar-background-start, @a-bar-background-end);
+
+	input, select, textarea, button {
+		font-family: @global-font-family;
+	}
+
+	.ui-link-inherit {
+		color: @a-bar-color;
+	}
+
+	.ui-link {
+		color: @a-bar-link-color;
+		font-weight: bold;
+
+		&:hover {
+			color: @a-bar-link-hover;
+		}
+
+		&:active {
+			color: @a-bar-link-active;
+		}
+
+		&:visited {
+			color: @a-bar-link-visited;
 		}
 	}
 }
@@ -140,42 +139,6 @@
 /* B
 -----------------------------------------------------------------------------------------------------------*/
 
-.ui-bar-b {
-	border: 1px solid @b-bar-border;
-	background: @b-bar-background-color;
-	color: @b-bar-color;
-	font-weight: bold;
-	text-shadow: @b-bar-shadow-x @b-bar-shadow-y @b-bar-shadow-radius @b-bar-shadow-color;
-	font-family: @global-font-family;
-
-	.linear-gradient(@b-bar-background-start, @b-bar-background-end);
-
-	input, select, textarea, button {
-		font-family: @global-font-family;
-	}
-
-	.ui-link-inherit {
-		color: @b-bar-color;
-	}
-
-	.ui-link {
-		color: @b-bar-link-color;
-		font-weight: bold;
-
-		&:hover {
-			color: @b-bar-link-hover;
-		}
-
-		&:active {
-			color: @b-bar-link-active;
-		}
-
-		&:visited {
-			color: @b-bar-link-visited;
-		}
-	}
-}
-
 .ui-body-b {
 	border: 1px solid @b-body-border;
 	background: @b-body-background-color;
@@ -208,6 +171,42 @@
 
 		&:visited {
 			color: @b-body-link-visited;
+		}
+	}
+}
+
+.ui-body-a {
+	border: 1px solid @a-body-border;
+	background: @a-body-background-color;
+	color: @a-body-color;
+	text-shadow: @a-body-shadow-x @a-body-shadow-y @a-body-shadow-radius @a-body-shadow-color;
+	font-weight: normal;
+	font-family: @global-font-family;
+
+	.linear-gradient(@a-body-background-start, @a-body-background-end);
+
+	input, select, textarea, button {
+		font-family: @global-font-family;
+	}
+
+	.ui-link-inherit {
+		color: @a-body-color;
+	}
+
+	.ui-link {
+		color: @a-body-link-color;
+		font-weight: bold;
+
+		&:hover {
+			color: @a-body-link-hover;
+		}
+
+		&:active {
+			color: @a-body-link-active;
+		}
+
+		&:visited {
+			color: @a-body-link-visited;
 		}
 	}
 }
@@ -264,6 +263,41 @@
 /* C
 -----------------------------------------------------------------------------------------------------------*/
 
+.ui-body-c {
+	border: 1px solid @c-body-border;
+	color: @c-body-color;
+	text-shadow: @c-body-shadow-x @c-body-shadow-y @c-body-shadow-radius @c-body-shadow-color;
+	background: @c-body-background-color;
+	font-family: @global-font-family;
+
+	.linear-gradient(@c-body-background-start, @c-body-background-end);
+
+	input, select, textarea, button {
+		font-family: @global-font-family;
+	}
+
+	.ui-link-inherit {
+		color: @c-body-color;
+	}
+
+	.ui-link {
+		color: @c-body-link-color;
+		font-weight: bold;
+
+		&:hover {
+			color: @c-body-link-hover;
+		}
+
+		&:active {
+			color: @c-body-link-active;
+		}
+
+		&:visited {
+			color: @c-body-link-visited;
+		}
+	}
+}
+
 .ui-bar-c {
 	border: 1px solid @c-bar-border;
 	background: @c-bar-background-color;
@@ -297,41 +331,6 @@
 
 	input, select, textarea, button {
 		font-family: @global-font-family;
-	}
-}
-
-.ui-body-c {
-	border: 1px solid @c-body-border;
-	color: @c-body-color;
-	text-shadow: @c-body-shadow-x @c-body-shadow-y @c-body-shadow-radius @c-body-shadow-color;
-	background: @c-body-background-color;
-	font-family: @global-font-family;
-
-	.linear-gradient(@c-body-background-start, @c-body-background-end);
-
-	input, select, textarea, button {
-		font-family: @global-font-family;
-	}
-
-	.ui-link-inherit {
-		color: @c-body-color;
-	}
-
-	.ui-link {
-		color: @c-body-link-color;
-		font-weight: bold;
-
-		&:hover {
-			color: @c-body-link-hover;
-		}
-
-		&:active {
-			color: @c-body-link-active;
-		}
-
-		&:visited {
-			color: @c-body-link-visited;
-		}
 	}
 }
 
@@ -387,42 +386,6 @@
 /* D
 -----------------------------------------------------------------------------------------------------------*/
 
-.ui-bar-d {
-	border: 1px solid @d-bar-border;
-	background: @d-bar-background-color;
-	color: @d-bar-color;
-	text-shadow: @d-bar-shadow-x @d-bar-shadow-y @d-bar-shadow-radius @d-bar-shadow-color;
-	font-family: @global-font-family;
-
-	.linear-gradient(@d-bar-background-start, @d-bar-background-end);
-
-	input, select, textarea, button {
-		font-family: @global-font-family;
-	}
-
-	.ui-link-inherit {
-		color: @d-bar-color;
-	}
-
-	.ui-link {
-		color: @d-bar-link-color;
-		font-weight: bold;
-
-		&:hover {
-			color: @d-bar-link-hover;
-		}
-
-		&:active {
-			color: @d-bar-link-active;
-		}
-
-		&:visited {
-			color: @d-bar-link-visited;
-		}
-	}
-}
-
-
 .ui-body-d {
 	border: 1px solid @d-body-border;
 	color: @d-body-color;
@@ -458,6 +421,40 @@
 	}
 }
 
+.ui-bar-d {
+	border: 1px solid @d-bar-border;
+	background: @d-bar-background-color;
+	color: @d-bar-color;
+	text-shadow: @d-bar-shadow-x @d-bar-shadow-y @d-bar-shadow-radius @d-bar-shadow-color;
+	font-family: @global-font-family;
+
+	.linear-gradient(@d-bar-background-start, @d-bar-background-end);
+
+	input, select, textarea, button {
+		font-family: @global-font-family;
+	}
+
+	.ui-link-inherit {
+		color: @d-bar-color;
+	}
+
+	.ui-link {
+		color: @d-bar-link-color;
+		font-weight: bold;
+
+		&:hover {
+			color: @d-bar-link-hover;
+		}
+
+		&:active {
+			color: @d-bar-link-active;
+		}
+
+		&:visited {
+			color: @d-bar-link-visited;
+		}
+	}
+}
 
 .ui-btn-up-d {
 	border: 1px solid @d-bup-border;
@@ -513,41 +510,6 @@
 /* E
 -----------------------------------------------------------------------------------------------------------*/
 
-.ui-bar-e {
-	border: 1px solid @e-bar-border;
-	background: @e-bar-background-color;
-	color: @e-bar-color;
-	text-shadow: @e-bar-shadow-x @e-bar-shadow-y @e-bar-shadow-radius @e-bar-shadow-color;
-	font-family: @global-font-family;
-
-	.linear-gradient(@e-bar-background-start, @e-bar-background-end);
-
-	input, select, textarea, button {
-		font-family: @global-font-family;
-	}
-
-	.ui-link-inherit {
-		color: @e-bar-color;
-	}
-
-	.ui-link {
-		color: @e-bar-link-color;
-		font-weight: bold;
-
-		&:hover {
-			color: @e-bar-link-hover;
-		}
-
-		&:active {
-			color: @e-bar-link-active;
-		}
-
-		&:visited {
-			color: @e-bar-link-visited;
-		}
-	}
-}
-
 .ui-body-e {
 	border: 1px solid @e-body-border;
 	color: @e-body-color;
@@ -579,6 +541,41 @@
 
 		&:visited {
 			color: @e-body-link-visited;
+		}
+	}
+}
+
+.ui-bar-e {
+	border: 1px solid @e-bar-border;
+	background: @e-bar-background-color;
+	color: @e-bar-color;
+	text-shadow: @e-bar-shadow-x @e-bar-shadow-y @e-bar-shadow-radius @e-bar-shadow-color;
+	font-family: @global-font-family;
+
+	.linear-gradient(@e-bar-background-start, @e-bar-background-end);
+
+	input, select, textarea, button {
+		font-family: @global-font-family;
+	}
+
+	.ui-link-inherit {
+		color: @e-bar-color;
+	}
+
+	.ui-link {
+		color: @e-bar-link-color;
+		font-weight: bold;
+
+		&:hover {
+			color: @e-bar-link-hover;
+		}
+
+		&:active {
+			color: @e-bar-link-active;
+		}
+
+		&:visited {
+			color: @e-bar-link-visited;
 		}
 	}
 }
