@@ -1,0 +1,337 @@
+/*
+* Global
+*/
+@global-font-family: Helvetica, Arial, sans-serif;
+@global-active-border: #155678;
+@global-active-background-color: #4596ce;
+@global-active-color: #fff;
+@global-active-shadow-x: 0;
+@global-active-shadow-y: -1px;
+@global-active-shadow-radius: 1px;
+@global-active-shadow-color: #145072;
+@global-active-background-start: #85bae4;
+@global-active-background-end: #5393c5;
+@global-radii-blocks: 1em;
+@global-icon-color: #666;
+@global-icon-disc: rgba(0,0,0,.4);
+@global-icon-set: url(images/icons-18-white.png);
+@global-icon-radius: 9px;
+@global-radii-buttons: 1em;
+@global-box-shadow-size: 4px;
+@global-box-shadow-color: rgba(0,0,0,.75);
+
+
+/*
+* A
+*/
+@a-bar-border: #0B1C00;
+@a-bar-background-color: #153600;
+@a-bar-background-start: #225500;
+@a-bar-background-end: @a-bar-background-color;
+@a-bar-color: #fff;
+@a-bar-shadow-x: 0;
+@a-bar-shadow-y: -1px;
+@a-bar-shadow-radius: 1px;
+@a-bar-shadow-color: #000;
+@a-bar-link-color: #6CD02F;
+@a-bar-link-hover: #60FF00;
+@a-bar-link-active: @a-bar-link-hover;
+@a-bar-link-visited: @a-bar-link-hover;
+
+@a-body-border: #2A2A2A;
+@a-body-background-color: #16220E;
+@a-body-background-start: #516639;
+@a-body-background-end: @a-body-background-color;
+@a-body-color: #fff;
+@a-body-shadow-x: 0;
+@a-body-shadow-y: 1px;
+@a-body-shadow-radius: 0;
+@a-body-shadow-color: #000;
+@a-body-link-color: #66E21A;
+@a-body-link-hover: @a-body-link-color;
+@a-body-link-active: @a-body-link-color;
+@a-body-link-visited: @a-body-link-color;
+
+@a-bup-border: #222;
+@a-bup-background-color: #153600;
+@a-bup-background-start: #225500;
+@a-bup-background-end: @a-bup-background-color;
+@a-bup-color: #fff;
+@a-bup-shadow-x: 0;
+@a-bup-shadow-y: -1px;
+@a-bup-shadow-radius: 1px;
+@a-bup-shadow-color: #000;
+
+@a-bhover-border: #000;
+@a-bhover-background-color: #235A00;
+@a-bhover-background-start: #48662C;
+@a-bhover-background-end: @a-bhover-background-color;
+@a-bhover-color: #fff;
+@a-bhover-shadow-x: 0;
+@a-bhover-shadow-y: -1px;
+@a-bhover-shadow-radius: 1px;
+@a-bhover-shadow-color: #000;
+
+@a-bdown-border: #000;
+@a-bdown-background-color: @a-bhover-background-start;
+@a-bdown-background-start: @a-bhover-background-end;
+@a-bdown-background-end: @a-bhover-background-start;
+@a-bdown-color: #fff;
+@a-bdown-shadow-x: 0;
+@a-bdown-shadow-y: -1px;
+@a-bdown-shadow-radius: 1px;
+@a-bdown-shadow-color: #000;
+
+
+/*
+* B
+*/
+@b-bar-border: #538C1E;
+@b-bar-background-color: #6FA241;
+@b-bar-background-start: #7AE31A;
+@b-bar-background-end: @b-bar-background-color;
+@b-bar-color: #fff;
+@b-bar-shadow-x: 0;
+@b-bar-shadow-y: -1px;
+@b-bar-shadow-radius: 1px;
+@b-bar-shadow-color: #587A25;
+@b-bar-link-color: #C8FF57;
+@b-bar-link-hover: @b-bar-link-color;
+@b-bar-link-active: @b-bar-link-color;
+@b-bar-link-visited: @b-bar-link-color;
+
+@b-body-border: #506A39;
+@b-body-background-color: #77A251;
+@b-body-background-start: #A8E372;
+@b-body-background-end: @b-body-background-color;
+@b-body-color: #111;
+@b-body-shadow-x: 0;
+@b-body-shadow-y: 1px;
+@b-body-shadow-radius: 0;
+@b-body-shadow-color: #fff;
+@b-body-link-color: #477B1A;
+@b-body-link-hover: @b-body-link-color;
+@b-body-link-active: @b-body-link-color;
+@b-body-link-visited: @b-body-link-color;
+
+@b-bup-border: #145072;
+@b-bup-background-color: #6FA241;
+@b-bup-background-start: #7AE31A;
+@b-bup-background-end: @b-bup-background-color;
+@b-bup-color: #fff;
+@b-bup-shadow-x: 0;
+@b-bup-shadow-y: -1px;
+@b-bup-shadow-radius: 1px;
+@b-bup-shadow-color: #145072;
+
+@b-bhover-border: #00516e;
+@b-bhover-background-color: #83C449;
+@b-bhover-background-start: #95FD35;
+@b-bhover-background-end: @b-bhover-background-color;
+@b-bhover-color: #fff;
+@b-bhover-shadow-x: 0;
+@b-bhover-shadow-y: -1px;
+@b-bhover-shadow-radius: 1px;
+@b-bhover-shadow-color: #014D68;
+
+@b-bdown-border: #225377;
+@b-bdown-background-color: @b-bhover-background-start;
+@b-bdown-background-start: @b-bhover-background-end;
+@b-bdown-background-end: @b-bhover-background-start;
+@b-bdown-color: #fff;
+@b-bdown-shadow-x: 0;
+@b-bdown-shadow-y: -1px;
+@b-bdown-shadow-radius: 1px;
+@b-bdown-shadow-color: #225377;
+
+
+/*
+* C
+*/
+@c-bar-border: #B3B3B3;
+@c-bar-background-color: #e9eaeb;
+@c-bar-color: #3E3E3E;
+@c-bar-shadow-x: 0;
+@c-bar-shadow-y: 1px;
+@c-bar-shadow-radius: 1px;
+@c-bar-shadow-color: #fff;
+@c-bar-background-start: #f0f0f0;
+@c-bar-background-end: @c-bar-background-color;
+@c-bar-link-color: #7cc4e7;
+@c-bar-link-hover: #2489CE;
+@c-bar-link-active: @c-bar-link-hover;
+@c-bar-link-visited: @c-bar-link-hover;
+
+@c-body-border: #B3B3B3;
+@c-body-color: #333;
+@c-body-shadow-x: 0;
+@c-body-shadow-y: 1px;
+@c-body-shadow-radius: 0;
+@c-body-shadow-color: #fff;
+@c-body-background-color: #f0f0f0;
+@c-body-background-start: #eee;
+@c-body-background-end: #ddd;
+@c-body-link-color: #2489CE;
+@c-body-link-hover: @c-body-link-color;
+@c-body-link-active: @c-body-link-color;
+@c-body-link-visited: @c-body-link-color;
+
+@c-bup-border: #ccc;
+@c-bup-background-color: #eee;
+@c-bup-color: #444;//TODO conflict
+@c-bup-color: #2F3E46;
+@c-bup-shadow-x: 0;
+@c-bup-shadow-y: 1px;
+@c-bup-shadow-radius: 1px;
+@c-bup-shadow-color: #f6f6f6;
+@c-bup-background-start: #fdfdfd;
+@c-bup-background-end: @c-bup-background-color;
+
+@c-bhover-border: #bbbbbb;
+@c-bhover-background-color: #dadada;
+@c-bhover-color: #101010;//TODO conflict
+@c-bhover-color: #2F3E46;
+@c-bhover-shadow-x: 0;
+@c-bhover-shadow-y: 1px;
+@c-bhover-shadow-radius: 1px;
+@c-bhover-shadow-color: #fff;
+@c-bhover-background-start: #ededed;
+@c-bhover-background-end: @c-bhover-background-color;
+
+@c-bdown-border: #808080;
+@c-bdown-background-color: #fdfdfd;
+@c-bdown-color: #111;//TODO conflict
+@c-bdown-color: #2F3E46;
+@c-bdown-shadow-x: 0;
+@c-bdown-shadow-y: 1px;
+@c-bdown-shadow-radius: 1px;
+@c-bdown-shadow-color: #fff;
+@c-bdown-background-start: #eee;
+@c-bdown-background-end: @c-bdown-background-color;
+
+
+/*
+* D
+*/
+@d-bar-border: #ccc;
+@d-bar-background-color: #bbb;
+@d-bar-color: #333;
+@d-bar-shadow-x: 0;
+@d-bar-shadow-y: 1px;
+@d-bar-shadow-radius: 0;
+@d-bar-shadow-color: #eee;
+@d-bar-background-start: #ddd;
+@d-bar-background-end: @d-bar-background-color;
+@d-bar-link-color: #2489CE;
+@d-bar-link-hover: @d-bar-link-color;
+@d-bar-link-active: @d-bar-link-color;
+@d-bar-link-visited: @d-bar-link-color;
+
+@d-body-border: #ccc;
+@d-body-color: #333;
+@d-body-shadow-x: 0;
+@d-body-shadow-y: 1px;
+@d-body-shadow-radius: 0;
+@d-body-shadow-color: #fff;
+@d-body-background-color: #fff;
+@d-body-background-end: @d-body-background-color;
+@d-body-background-start: @d-body-background-color;
+@d-body-link-color: #2489CE;
+@d-body-link-hover: @d-body-link-color;
+@d-body-link-active: @d-body-link-color;
+@d-body-link-visited: @d-body-link-color;
+
+@d-bup-border: #ccc;
+@d-bup-background-color: #fff;
+@d-bup-color: #444;//TODO conflict
+@d-bup-color: #333;
+@d-bup-shadow-x: 0;
+@d-bup-shadow-y: 1px;
+@d-bup-shadow-radius: 1px;
+@d-bup-shadow-color: #fff;
+@d-bup-background-end: @d-bup-background-color;
+@d-bup-background-start: @d-bup-background-color;
+
+@d-bhover-border: #aaa;
+@d-bhover-background-color: #eee;
+@d-bhover-color: #222;
+@d-bhover-shadow-x: 0;
+@d-bhover-shadow-y: 1px;
+@d-bhover-shadow-radius: 1px;
+@d-bhover-shadow-color: #fff;
+@d-bhover-background-start: #fdfdfd;
+@d-bhover-background-end: @d-bhover-background-color;
+
+@d-bdown-border: #aaa;
+@d-bdown-background-color: #fff;
+@d-bdown-color: #111;
+@d-bdown-shadow-x: 0;
+@d-bdown-shadow-y: 1px;
+@d-bdown-shadow-radius: 1px;
+@d-bdown-shadow-color: #fff;
+@d-bdown-background-start: #eee;
+@d-bdown-background-end: @d-bdown-background-color;
+
+
+/*
+* E
+*/
+@e-bar-border: #F7C942;
+@e-bar-background-color: #fadb4e;
+@e-bar-color: #333;
+@e-bar-shadow-x: 0;
+@e-bar-shadow-y: 1px;
+@e-bar-shadow-radius: 0;
+@e-bar-shadow-color: #fff;
+@e-bar-background-start: #fceda7;
+@e-bar-background-end: @e-bar-background-color;
+@e-bar-link-color: #2489CE;
+@e-bar-link-hover: @e-bar-link-color;
+@e-bar-link-active: @e-bar-link-color;
+@e-bar-link-visited: @e-bar-link-color;
+
+@e-body-border: #F7C942;
+@e-body-color: #333;
+@e-body-shadow-x: 0;
+@e-body-shadow-y: 1px;
+@e-body-shadow-radius: 0;
+@e-body-shadow-color: #fff;
+@e-body-background-color: #faeb9e;
+@e-body-background-start: #fff;
+@e-body-background-end: @e-body-background-color;
+@e-body-link-color: #2489CE;
+@e-body-link-hover: @e-body-link-color;
+@e-body-link-active: @e-body-link-color;
+@e-body-link-visited: @e-body-link-color;
+
+@e-bup-border: #F7C942;
+@e-bup-background-color: #fadb4e;
+@e-bup-color: #333;
+@e-bup-shadow-x: 0;
+@e-bup-shadow-y: 1px;
+@e-bup-shadow-radius: 0;
+@e-bup-shadow-color: #fff;
+@e-bup-background-start: #fceda7;
+@e-bup-background-end: @e-bup-background-color;
+
+@e-bhover-border: #e79952;
+@e-bhover-background-color: #fbe26f;
+@e-bhover-color: #111;//TODO conflict
+@e-bhover-color: #333;
+@e-bhover-shadow-x: 0;
+@e-bhover-shadow-y: 1px;
+@e-bhover-shadow-radius: 1px;
+@e-bhover-shadow-color: #fff;
+@e-bhover-background-start: #fcf0b5;
+@e-bhover-background-end: @e-bhover-background-color;
+
+@e-bdown-border: #F7C942;
+@e-bdown-background-color: #fceda7;
+@e-bdown-color: #111;//TODO Conflict
+@e-bdown-color: #333;
+@e-bdown-shadow-x: 0;
+@e-bdown-shadow-y: 1px;
+@e-bdown-shadow-radius: 1px;
+@e-bdown-shadow-color: #ffffff;
+@e-bdown-background-start: #fadb4e;
+@e-bdown-background-end: @e-bdown-background-color;

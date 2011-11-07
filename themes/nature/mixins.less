@@ -1,0 +1,99 @@
+.linear-gradient (@start, @end) {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@end)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, @start, @end); /* Chrome 10+, Saf5.1+ */
+	background-image:	-moz-linear-gradient(top, @start, @end); /* FF3.6 */
+	background-image:	 -ms-linear-gradient(top, @start, @end); /* IE10 */
+	background-image:	  -o-linear-gradient(top, @start, @end); /* Opera 11.10+ */
+	background-image:		 linear-gradient(top, @start, @end);
+}
+
+.corner-tl (@radius: @global-radii-blocks) {
+	-moz-border-radius-topleft: @radius;
+	-webkit-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+.corner-tr (@radius: @global-radii-blocks) {
+	-moz-border-radius-topright: @radius;
+	-webkit-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.corner-bl (@radius: @global-radii-blocks) {
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.corner-br (@radius: @global-radii-blocks) {
+	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.corner-top (@radius: @global-radii-blocks) {
+	-moz-border-radius-topleft: @radius;
+	-webkit-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+	-moz-border-radius-topright: @radius;
+	-webkit-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.corner-bottom (@radius: @global-radii-blocks) {
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.corner-right (@radius: @global-radii-blocks) {
+	-moz-border-radius-topright: @radius;
+	-webkit-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.corner-left (@radius: @global-radii-blocks) {
+	-moz-border-radius-topleft: @radius;
+	-webkit-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.corner-all (@radius: @global-radii-blocks) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.corner-none() {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.background-size (@size-x, @size-y) {
+	-moz-background-size: @arguments;
+	-o-background-size: @arguments;
+	-webkit-background-size: @arguments;
+	background-size: @arguments;
+}
+
+.background-clip-padding() {
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.box-shadow() {
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	box-shadow: @arguments;
+}

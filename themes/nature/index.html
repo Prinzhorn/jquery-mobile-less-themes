@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Default theme</title>
+
+	<link href="../jquery.mobile.structure.css" rel="stylesheet" type="text/css" />
+
+	<link href="theme.less" rel="stylesheet/less" type="text/css">
+
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('#mixed')
+			.clone().attr({'data-theme': 'a', 'id': 'a'}).appendTo('body')
+			.clone().attr({'data-theme': 'b', 'id': 'b'}).appendTo('body')
+			.clone().attr({'data-theme': 'c', 'id': 'c'}).appendTo('body')
+			.clone().attr({'data-theme': 'd', 'id': 'd'}).appendTo('body')
+			.clone().attr({'data-theme': 'e', 'id': 'e'}).appendTo('body');
+
+		$('[data-role="page"]:not(#mixed)').each(function() {
+			$(this).find('*').attr('data-theme', $(this).attr('data-theme'));
+		});
+	});
+	</script>
+	<script type="text/javascript" src="../jquery.mobile.js"></script>
+	<script type="text/javascript" src="../less.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="mixed">
+		<div data-role="header"><h1>Header with <a href="#">link</a></h1></div>
+
+		<div data-role="content">
+			<p>Sample text and <a href="#">link</a></p>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="heading">Heading</li>
+				<li><a href="#a">A</a></li>
+				<li><a href="#b">B</a></li>
+				<li><a href="#c">C</a></li>
+				<li><a href="#d">D</a></li>
+				<li><a href="#e">E</a></li>
+				<li><a href="#mixed">Mixed</a></li>
+			</ul>
+
+			<div data-role="fieldcontain">
+				<input type="text" value="Text input" />
+			</div>
+			<div data-role="fieldcontain">
+				<input type="range" value="25" min="0" max="100"  />
+			</div>
+			<input type="button" value="Button" />
+		</div>
+
+		<div data-role="footer"><h4>Footer with <a href="#">link</a></h4></div>
+	</div>
+</body>
+
+</html>
