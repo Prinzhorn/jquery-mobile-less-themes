@@ -1,9 +1,9 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Default theme</title>
 
@@ -29,13 +29,15 @@
 	<script type="text/javascript" src="../jquery.mobile.js"></script>
 	<script type="text/javascript" src="../less.js"></script>
 </head>
-	
+
 <body>
 	<div data-role="page" id="mixed">
-		<div data-role="header"><h1>A begin</h1></div>
+		<div data-role="header"><h1>Header</h1></div>
 
 		<div data-role="content">
-			<ul data-role="listview" data-inset="false">
+			<p>Sample text and <a href="#">link</a></p>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="heading">Heading</li>
 				<li><a href="#a">A</a></li>
 				<li><a href="#b">B</a></li>
 				<li><a href="#c">C</a></li>
@@ -44,31 +46,16 @@
 				<li><a href="#mixed">Mixed</a></li>
 			</ul>
 
-			<ul data-role="listview" data-inset="true">
-				<li><a href="#a">A</a></li>
-				<li><a href="#b">B</a></li>
-				<li><a href="#c">C</a></li>
-				<li><a href="#d">D</a></li>
-				<li><a href="#mixed">Mixed</a></li>
-			</ul>
-
-			<ul data-role="listview" data-inset="false">
-				<li>Foo</li>
-				<li>Bar</li>
-			</ul>
-
-			<ul data-role="listview" data-inset="true">
-				<li>Foo</li>
-				<li>Bar</li>
-			</ul>
-
-			<form action="" method="GET">
-				<input type="button" value="Foo" />
-				<input type="text" />
-			</form>
+			<div data-role="fieldcontain">
+				<input type="text" value="Text input" />
+			</div>
+			<div data-role="fieldcontain">
+				<input type="range" value="25" min="0" max="100"  />
+			</div>
+			<input type="button" value="Button" />
 		</div>
-		
-		<div data-role="footer"><h4>A end</h4></div>
+
+		<div data-role="footer"><h4>Footer</h4></div>
 	</div>
 </body>
 
