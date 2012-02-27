@@ -3,6 +3,8 @@ jQuery Mobile less themes
 
 Create jQuery Mobile themes using [less.js](https://github.com/cloudhead/less.js)
 
+This repo is **inactive**, because shortly after I ported the css files the themeroller (http://jquerymobile.com/themeroller/) was released. I recommend you use this instead.
+
 
 Creating a theme
 ==========
